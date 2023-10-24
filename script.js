@@ -71,9 +71,11 @@ window.addEventListener("keyup", function (event) {
 
             if (plocha1 >= sirkaHriste1) {
                 if (plocha2 >= sirkaHriste2) {
-                    alert("Remíza! Oba hráči získávají bod.");
+                    alert("Remíza! Oba hráči získávají bod. \n" + (skoreHrace1 + 1) +  ":" + (skoreHrace2 + 1));
+                    skoreHrace1 += 1;
+                    skoreHrace2 += 1;
                 } else {
-                    alert("Červené Auto získává bod! \n " + (skoreHrace1+ 1)+  ":" + skoreHrace2);
+                    alert("Červené Auto získává bod! \n " + (skoreHrace1+ 1) +  ":" + skoreHrace2);
                     skoreHrace1 += 1;
                     setTimeout(startHry, 2000);
                 }
@@ -88,7 +90,9 @@ window.addEventListener("keyup", function (event) {
 
             if (plocha2 >= sirkaHriste2) {
                 if (plocha1 >= sirkaHriste1) {
-                    alert("Remíza! Oba hráči získávají bod.");
+                    alert("Remíza! Oba hráči získávají bod. \n" + (skoreHrace2 + 1) +  ":" + (skoreHrace1 + 1));
+                    skoreHrace2 += 1;
+                    skoreHrace1 += 1;
                 } else {
                     alert("Zelené Auto získává bod! \n " + skoreHrace1 + ":" + (skoreHrace2 + 1));
                     skoreHrace2 += 1;
