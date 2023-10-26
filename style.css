@@ -1,42 +1,40 @@
-
-body{
-    background-image: url( photos/austin-loveing--QmNbzMrj1M-unsplash.jpg);
+body {
+    background-image: url(photos/austin-loveing--QmNbzMrj1M-unsplash.jpg);
     background-size: 1465px 840px;
-  
-    /* background-color: #E3774F; */
 }
 
 th,
 td {
     border: 1px solid black;
-    background-color:#056699;
+    background-color: #056699;
     text-align: center;
 }
 
-
-.table-ovladani{
-    border-collapse:collapse;
+.table-ovladani {
+    /* tabulka pro informace */
+    border-collapse: collapse;
 }
 
-.score{
-    position:absolute;
-    /* background-color:#056699; */
-    color:white;
-    left:400px;
+.score {
+    /* tabulka pro skore */
+    position: absolute;
+    left: 400px;
     top: 20px;
-    border-collapse:initial;
+    border-collapse: initial;
     border-spacing: 10px;
     width: 200px;
 }
 
-.odpocitavani{
+.odpocitavani {
+    /* spuštění GO! */
     font-family: Arial, Helvetica, sans-serif;
-    color:#056699;
+    color: #056699;
     font-size: 40px;
-   position:absolute;
-    top:260px;
-    left:490px;
+    position: absolute;
+    top: 260px;
+    left: 490px;
 }
+
 .score:first-child tr:nth-child(1),
 .table-ovladani:first-child tr:nth-child(2) {
     color: #C92657;
@@ -44,14 +42,14 @@ td {
 
 .score:first-child tr:nth-child(2),
 .table-ovladani:first-child tr:nth-child(3) {
-    color:#60B569;
+    color: #60B569;
 }
 
 .draha {
-  margin: 100px 200px; 
-    width: 1000px; 
+    margin: 100px 200px;
+    width: 1000px;
     height: 500px;
-    background-color:#AEAEAE;
+    background-color: #AEAEAE;
     position: relative;
     display: flex;
     align-items: center;
@@ -60,23 +58,22 @@ td {
 }
 
 .start {
-    color:#FEFFFD;
     font-size: 20px;
-    margin: 120px 10px;
-    letter-spacing: 4px;
+    padding-top: 30px;
+    letter-spacing: 12px;
     writing-mode: vertical-rl;
     text-orientation: sideways;
     text-transform: uppercase;
 }
 
-.cil{
+.cil {
     background-color: grey;
     width: 70px;
 }
 
 .cil-napis {
-    color:#FEFFFD;
-    width:55%;
+    color: #FEFFFD;
+    width: 55%;
     font-size: 20px;
     margin: 120px 10px;
     letter-spacing: 10px;
@@ -104,6 +101,18 @@ td {
     display: flex;
 }
 
+.zeleneAuto {
+    border: 1px solid black;
+    background-color: #60B569;
+    width: 60px;
+    height: 15px;
+    border-radius: 0px 0px 10px 0px;
+    position: absolute;
+    top: 350px;
+    left: 0px;
+    display: flex;
+}
+
 .kolo {
     width: 20px;
     height: 20px;
@@ -126,7 +135,7 @@ td {
 }
 
 .karoserie-zeleneAuto {
-    background-color:#60B569;
+    background-color: #60B569;
 }
 
 .kolo2 {
@@ -135,16 +144,4 @@ td {
     background-color: #000;
     border-radius: 50%;
     margin-right: 7px;
-}
-
-.zeleneAuto {
-    border: 1px solid black;
-    background-color: #60B569;
-    width: 60px;
-    height: 15px;
-    border-radius: 0px 0px 10px 0px;
-    position: absolute;
-    top: 350px;
-    left: 0px;
-    display: flex;
 }
