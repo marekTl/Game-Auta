@@ -66,7 +66,9 @@ window.addEventListener("keyup", function (event) {
     if (!probihaOdpocet) {
 
         if (event.key === "y") {
+            //pohyb hráče, ale je omezen na šířku hřiště
             plocha1 = Math.min(plocha1 + krok, sirkaHriste1);
+            //horizontání pozice prvku na stránce, pohyb hráče v px
             hrac1.style.left = plocha1 + "px";
 
             if (plocha1 >= sirkaHriste1) {
