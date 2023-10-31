@@ -21,8 +21,8 @@ let plocha2 = 0;
 function resetHraci() {
     plocha1 = 0;
     plocha2 = 0;
-    hrac1.style.left = plocha1 + "px";
-    hrac2.style.left = plocha2 + "px";
+    hrac1.style.left = plocha1;
+    hrac2.style.left = plocha2;
 }
 
 // Funkce pro aktualizaci zobrazení skóre
